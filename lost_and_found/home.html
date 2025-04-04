@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Page</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+        integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="script.js">
+
+
+    <!-- media query -->
+    <!-- <style>
+    h3/h3{
+        size:;
+    }
+</style> -->
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!--  href -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo_ddu.png" alt="ddu logo" class="d-inline-block align-top" height="50">
+        </a>
+        <!--  button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav"
+            aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- nav bar div with id -->
+        <div class="collapse navbar-collapse" id="navbarnav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="form.html" class="nav-link">LOST & FIND</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">ABOUT</a>
+                </li>
+            </ul>
+            <!-- <button class="btn btn-outline-dark shadow-none me-lg-3 me-2 ms-2 data" data-toggle="modal" data-target="aloginmodal" type ="button">Login</button> -->
+
+
+
+            <!-- for the login button -->
+
+            <!-- <button class="btn btn-outline-dark shadow-none" onclick="openPopup()">Login</button>
+            <div class="overlay" id="overlay" onclick="closePopup()"></div>
+            <button class="btn btn-outline-dark shadow-none" onclick="openPopup1()">Register</button>
+
+            <div class="overlay" id="overlay" onclick="closePopup1()"></div>
+
+            <div class="popup" id="popup">
+                <h2>Login</h2>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup()">Submit</button>
+            </div>
+            <div class="popup1" id="popup1">
+                <h2>Login</h2>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup1()">Submit</button>
+            </div> -->
+
+
+            <button class="btn btn-outline-dark shadow-none" onclick="openPopup()">Login</button>
+            <div class="overlay" id="overlay" onclick="closePopup()"></div>
+        
+            <button class="btn btn-outline-dark shadow-none" onclick="openPopup1()">Register</button>
+            <div class="overlay1" id="overlay1" onclick="closePopup1()"></div>
+        
+            <div class="popup" id="popup">
+                <h2>Login</h2>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup()">Submit</button>
+            </div>
+        
+            <div class="popup1" id="popup1">
+                <h2>Register</h2>
+                <input type="text" placeholder="Name">
+                <input type="number" placeholder="Phone number">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+
+                <button onclick="closePopup1()">Submit</button>
+            </div>
+        
+            <script src="script.js"></script>
+
+            <!-- <button class="btn btn-outline-dark shadow-none me-lg-3  data" data-toggle="modal"
+                data-target="aregistermodal" type="button">Register</button> -->
+
+        </div>
+    </nav>
+   
+    
+<!-- for registor -->
+ 
+
+
+
+    <!-- hero section -->
+
+
+    <!-- some experiment -->
+
+
+
+    <header class="hero-section text-center">
+        <h1>DDU LOST AND FOUND PORTAL</h1>
+        <p>Best soltuion for your lost belongings</p>
+    </header>
+
+    <!-- search bar -->
+    <section class="search-bar-section text-center">
+        <div class="container">
+            <h2>Search here for lost item</h2>
+            <div class="search-bar">
+                <input type="text" id="searchinput" placeholder="Enter lost item name">
+                <button id="searchbutton">Search</button>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+
+    <!-- lost and found category -->
+    <section id="categories" class="my-4">
+        <h2 class="animated-header">Categories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/lost_laptop.jpg" class="img-fluid rounded">
+                    <h3>Laptop</h3>
+
+                    <p>
+                        Item: Dell XPS 13 <br>
+                        Location: IET 32 <br>
+                        Found on: March 30, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img height="420px" ,width="420px" src="assets/lost_mobile.webp " class="img-fluid rounded">
+                    <h3>Phone</h3>
+                    <p> Item: Galaxy s10e <br>
+                        Location:DDU Ground <br>
+                        Found on: March27, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/lost_watch.webp" class="img-fluid rounded">
+                    <h3>Watch</h3>
+                    <p>
+                        Item: Smart Watch <br>
+                        Location: IET 32 <br>
+                        Found on: March 26, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+        </div>
+        <div class="more-btn-container">
+           <a href="form.html"> <button class="more-btn">More</button></a>
+        </div>
+
+    </section>
+
+    <!-- line breaker -->
+    <div class="line"></div>
+
+    <section id="categories" class="my-4">
+        <h2 class="animated-header">Categories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/ddu-SW-book.jpg" class="img-fluid rounded">
+                    <h3 >Book</h3>
+
+                    <p>
+                        Item: Trishla mam book <br>
+                        Location: IET 32 <br>
+                        Found on: March 30, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img height="420px" ,width="420px" src="assets/ddu-copy.png" class="img-fluid rounded">
+                    <h3 >Notes</h3>
+                    <p> Item:Trishla mam notes <br>
+                        Location:DDU Ground <br>
+                        Found on: March27, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/ddu-diary-panda.jfif" class="img-fluid rounded">
+                    <h3 >Diary</h3>
+                    <p>
+                        Item: Secret Diary <br>
+                        Location: IET 32 <br>
+                        Found on: March 26, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+        </div>
+        <div class="more-btn-container">
+            <a href="form.html"><button class="more-btn">More</button></a>
+        </div>
+
+    </section>
+    <section id="categories" class="my-4">
+        <h2 class="animated-header">Accessoris</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/ddu-bag.jpg" class="img-fluid rounded">
+                    <h3>Bag</h3>
+
+                    <p>
+                        Item: Trishla mam bag <br>
+                        Location: IET 32 <br>
+                        Found on: March 30, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img height="420px" ,width="420px" src="assets/ddu-bottle.webp" class="img-fluid rounded">
+                    <h3>Notes</h3>
+                    <p> Item:Trishla bottle notes <br>
+                        Location:DDU Ground <br>
+                        Found on: March27, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/ddu-keys.jpg" class="img-fluid rounded">
+                    <h3>Key</h3>
+                    <p>
+                        Item: Bike key <br>
+                        Location: IET 32 <br>
+                        Found on: March 26, 2025
+                    </p>
+                    <button class="claim-btn">Claim</button>
+                </div>
+            </div>
+        </div>
+        <div class="more-btn-container">
+            <a href="form.html"><button class="more-btn">More</button></a>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- footer 1st try -->
+    <!-- <footer>
+     <div class="container">
+        <div class="sec aboutus">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reiciendis, perspiciatis, nisi eius natus neque ad, recusandae qui deserunt tenetur velit. Sed ullam iusto facilis facere animi ab amet odit?</p>
+
+        </div>
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a></li>
+
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+            <li><a href="#"><i 
+            class="fa fa-instagram" aria-hidden="true"></i>
+            </a></li>
+
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+        </ul>
+     </div>
+     </footer> -->
+
+
+    <!-- footer try 2 -->
+    <footer>
+        <div class="ques">Questions ? call us at : 100-100-100-100</div>
+        <div class="footer">
+            <div class="footer-item">
+                <a href="faq">Lost</a>
+                <a href="faq">Found</a>
+                <a href="faq">Return</a>
+                <a href="faq">Claim</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Help Centre</a>
+                <a href="faq">Jobs</a>
+                <a href="faq">Cookie Procedure</a>
+                <a href="faq">Legal Notices</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Account</a>
+                <a href="faq">Jobs</a>
+                <a href="faq">student</a>
+                <a href="faq">Lost&found</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Media Centre</a>
+                <a href="faq">Terms of use</a>
+                <a href="faq">Contact us</a>
+                <a href="faq"></a>
+            </div>
+        </div>
+    </footer>
+    </footer>
+</body>
+
+</html>
